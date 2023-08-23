@@ -1,0 +1,15 @@
+version: 1
+name: deploy
+environments:
+  production:
+    uuid: null
+    name: null
+    user: null
+  rc:
+    uuid: null
+    name: null
+    user: null
+  staging:
+    uuid: a202b0f3-9139-45c3-82a5-be387b729b9f
+    name: RickAndMorty
+    user: dgomez@auronix.com

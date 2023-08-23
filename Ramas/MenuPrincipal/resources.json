@@ -1,0 +1,13 @@
+{
+  "es": {
+    "MenuPrincipal": {
+      "mensaje": "Elige la opción que quieras. No es que importe mucho en este absurdo universo en el que vivimos, ¿verdad?",
+      "opcion": {
+        "uno": "Ver 5 personajes",
+        "dos": "Buscar personaje"
+      },
+      "opcionInvalida": "Opción inválida. ¿No puedes hacerlo bien a la primera? ¡Vamos, inténtalo otra vez, pero sin hacer que el universo explote en el intento!",
+      "despedida": "Hasta luego. No sé en qué parte del multiverso estarás, pero si necesitas más ayuda, ¡no dudes en volver! ¡Wubba lubba dub dub!"
+    }
+  }
+}

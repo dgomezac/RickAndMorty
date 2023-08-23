@@ -1,0 +1,17 @@
+{
+  "es": {
+    "InfoPersonaje": {
+      "id": "ID",
+      "nombre": "Nombre",
+      "estado": "Estado",
+      "especie": "Especie",
+      "genero": "Género",
+      "ubicacion": "Ubicación",
+      "buenaEleccion": {
+        "uno": "Aquí tienes toda la información sobre ese personaje. Prepárate para un aluvión de datos que probablemente no cambiarán tu vida de manera significativa, pero hey, ¿quién sabe? ¡La ciencia es impredecible!",
+        "dos": "¡Ahí lo tienes! Toda la información que necesitas sobre ese personaje está justo delante de ti. ¿Qué te parece? Ahora tienes una visión más clara de lo que está pasando en este loco multiverso.",
+        "tres": "Aquí tienes toda la información sobre ese personaje. Como si eso fuera a cambiar algo significativo en este vasto y caótico cosmos. Pero, hey, si eso te emociona, ¡adelante, échale un vistazo!"
+      }
+    }
+  }
+}

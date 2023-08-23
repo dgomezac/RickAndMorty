@@ -1,0 +1,9 @@
+{
+  "es": {
+    "VerPersonajesRandom": {
+      "mensaje": "Aquí te van 5 personajes al azar. ¡Escoge uno si queres saber más sobre ellos! O si te estás sintiendo un poco abrumado, solo escribe {!strong!}menú{!/strong!} y volveremos al menú principal. ¡Vamos, toma una decisión, el tiempo es relativo, ya sabes!",
+      "mensajeAlterno": "¡Prepárate para más locura! Aquí te van otros 5 personajes al azar. Elige uno para saber más sobre ellos o, si sientes que estás en un laberinto mental, solo escribe {!strong!}menú{!/strong!} y vamos al menú principal. ¡No te quedes ahí parado, toma una decisión antes de que el universo se canse de esperar!",
+      "opcionInvalida": "Opción inválida. No te pases de listo. Escoge una de las opciones, ¿de acuerdo? No intentes complicar las cosas más de lo necesario."
+    }
+  }
+}
