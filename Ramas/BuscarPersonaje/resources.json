@@ -1,8 +1,8 @@
 {
   "es": {
     "BuscarPersonaje": {
-      "mensaje": "Escribe un ID (1-826) para buscar el personaje correspondiente, o si de repente entras en pánico y no sabes qué hacer, solo escribe {!strong!}menú{!/strong!} y volveremos al menú principal. ¡Vamos, no tenemos todo el día!",
-      "mensajeAlterno": "Puedo hacerlo de nuevo. ¡No te preocupes, soy un genio de la repetición! Ahí va de nuevo: Escribe un ID (1-826) para buscar el personaje correspondiente o, si sientes que tu cerebro está a punto de colapsar, simplemente escribe {!strong!}menú{!/strong!} para regresar al menú principal. Vamos, no me hagas esperar mucho, ¿eh?"
+      "mensaje": "Solo necesitas darme un número del 1 al 826, Morty, y te contaré 🗣️ todo sobre el personaje correspondiente. Si entras en pánico 😨 y no sabes qué hacer, solo escribe {!strong!}menú{!/strong!} y volvemos al inicio. ¡Vamos, Morty, no tenemos todo el día!",
+      "mensajeAlterno": "Puedo hacerlo de nuevo, Morty. ¡No te preocupes, soy un genio 🧐 de la repetición! Dame un número del 1 al 826 y te contaré todo sobre el personaje correspondiente. Vamos, Morty, no me hagas esperar mucho."
     }
   }
 }

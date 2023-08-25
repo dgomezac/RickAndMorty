@@ -1,16 +1,16 @@
 {
   "es": {
     "InfoPersonaje": {
-      "id": "ID",
-      "nombre": "Nombre",
-      "estado": "Estado",
-      "especie": "Especie",
-      "genero": "Género",
-      "ubicacion": "Ubicación",
+      "id": "🏷️ ID",
+      "estadoVivo": "😄 Estado",
+      "estadoMuerto": "☠️ Estado",
+      "especieHumano": "🌍 Especie",
+      "especieAlien": "👽 Especie",
+      "ubicacion": "📍 Ubicación",
       "buenaEleccion": {
-        "uno": "Aquí tienes toda la información sobre ese personaje. Prepárate para un aluvión de datos que probablemente no cambiarán tu vida de manera significativa, pero hey, ¿quién sabe? ¡La ciencia es impredecible!",
-        "dos": "¡Ahí lo tienes! Toda la información que necesitas sobre ese personaje está justo delante de ti. ¿Qué te parece? Ahora tienes una visión más clara de lo que está pasando en este loco multiverso.",
-        "tres": "Aquí tienes toda la información sobre ese personaje. Como si eso fuera a cambiar algo significativo en este vasto y caótico cosmos. Pero, hey, si eso te emociona, ¡adelante, échale un vistazo!"
+        "uno": "Morty, estamos a punto de sumergirnos en un océano de conocimiento 🧠 interdimensional. ¿Cambiará tu vida? ¡Quién sabe! 🤷‍♂️ A veces la ciencia nos sorprende con giros inesperados.",
+        "dos": "¡Morty, esto es asombroso! 😲 Toda la información que necesitamos sobre ese personaje está justo frente a nosotros, ¿puedes creerlo? 🤯 El conocimiento es poder, amigo.",
+        "tres": "¡Morty, espera un segundo! 🖐️ ¿Estás listo para adentrarte en este remolino de datos? 😵‍💫 Es hora de explorar el multiverso, Morty, y ver qué secretos nos esperan."
       }
     }
   }

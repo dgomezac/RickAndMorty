@@ -17,9 +17,8 @@ const mostrarInfo = info => {
   }
   Yggdrasil.sendCard(`${info.name}`, 
 `{!strong!}${t('InfoPersonaje.id')}:{!/strong!} ${info.id}
-{!strong!}${t('InfoPersonaje.estado')}:{!/strong!} ${info.status}
-{!strong!}${t('InfoPersonaje.especie')}:{!/strong!} ${info.species}
-{!strong!}${t('InfoPersonaje.genero')}:{!/strong!} ${info.gender}
+{!strong!}${info.status === 'Alive' ? t('InfoPersonaje.estadoVivo') : t('InfoPersonaje.estadoMuerto')}:{!/strong!} ${info.status}
+{!strong!}${info.species === 'Human' ? t('InfoPersonaje.especieHumano') : t('InfoPersonaje.especieAlien')}:{!/strong!} ${info.species}
 {!strong!}${t('InfoPersonaje.ubicacion')}:{!/strong!} ${info.location_name}`,
   info.image,
   'image/jpg',
