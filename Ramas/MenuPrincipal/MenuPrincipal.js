@@ -1,6 +1,7 @@
-import { Navigation, Utils, Yggdrasil, Logger } from '@aurotek/flows-js';
+import { Navigation, Utils, Yggdrasil, Memory } from '@aurotek/flows-js';
 import VerPersonajesRandom from '../VerPersonajesRandom/VerPersonajesRandom';
 import BuscarPersonaje from '../BuscarPersonaje/BuscarPersonaje';
+import FuncionesGenerales from '../../Modulos/FuncionesGenerales/funcionesGenerales';
 
 const t = Utils.getText;
 
@@ -22,20 +23,20 @@ const menu = () => {
 };
 
 const validaMenu = () => {
-  const opcion = Yggdrasil.evaluateMenuOption('menuPrincipal', Yggdrasil.getMessageText(), false);
-  //Logger.logBot(opcion);
-  switch (opcion) {
+  const opc = Yggdrasil.evaluateMenuOption('menuPrincipal', Yggdrasil.getMessageText(), false);
+  const nombrePaso = 'USUARIO - Menú Principal';
+
+  switch (opc) {
     case 1:
-      //Logger.logBot("Ver personajes random");
+      Memory.setUserVar('intentos', 0);
       VerPersonajesRandom.menu();
       break;
     case 2:
-      //Logger.logBot("Buscar personaje");
+      Memory.setUserVar('intentos', 0);
       BuscarPersonaje.menu();
       break;
     default:
-      //Logger.logBot("Default");
-      Yggdrasil.sendMessageText(t('MenuPrincipal.opcionInvalida'), 0);
+      FuncionesGenerales.opcionInvalida(t('MenuPrincipal.opcionInvalida'));
       break;
   };
 };

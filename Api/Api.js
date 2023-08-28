@@ -2,12 +2,32 @@ import { Yggdrasil, HTTP, Navigation } from '@aurotek/flows-js';
 
 const obtenerDatos = id => {
   try {
-    const _id = parseInt(id, 10);
-    if (!Number.isInteger(_id) || _id < 1 || _id > 826) {
-      Yggdrasil.sendMessageText('Eh, Morty, solo acepto números enteros 🔢 entre 1 y 826. No te compliques, ¿de acuerdo? 🤝 ¡Vamos, inténtalo de nuevo antes de que la realidad colapse o algo así!', 1);
-      return;
-    }
+    const response = HTTP.requestGet(`https://rickandmortyapi.com/api/character/${id}`);
 
+    if (response.status_code === 200) {
+      const {
+        content: { name, status, species, location: { name: location_name }, image }
+      } = response;
+      return { id, name, status, species, location_name, image };
+    }
+    else {
+      Yggdrasil.sendMessageText(`Status code: ${response.status_code}. El bot finalizará.`, 2);
+      Navigation.setIdleFunction('cierreConversacion', 3);
+    }
+  }
+  catch (error) {
+    Yggdrasil.sendMessageText(`ERROR API: ${error}. El bot finalizará.`, 2);
+    Navigation.setIdleFunction('cierreConversacion', 3);
+  }
+}
+
+export default {
+  obtenerDatos
+};
+
+/*
+const obtenerDatos = id => {
+  try {
     const response = HTTP.requestGet(`https://rickandmortyapi.com/api/character/${id}`);
 
     if (response.status_code >= 100 && response.status_code < 200) {
@@ -47,7 +67,4 @@ const obtenerDatos = id => {
     Navigation.setIdleFunction('cierreConversacion', 3);
   }
 };
-
-export default {
-  obtenerDatos
-};
+*/

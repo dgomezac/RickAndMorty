@@ -1,8 +1,8 @@
 {
   "es": {
     "VerPersonajesRandom": {
-      "mensaje": "¡Jeez, Morty! Mira, te voy a dar 5 personajes y eliges uno para que te cuente más 🕵️‍♂️ sobre ellos, ¿de acuerdo?. Si te sientes abrumado 😓, solo escribe {!strong!}menú{!/strong!} y volvemos atrás. ¡Vamos, Morty, el tiempo es relativo y el universo no se va a esperar por nostros!",
-      "mensajeAlterno": "Escucha, Morty, te voy a dar otros 5 personajes y eliges uno para que te hable más sobre ellos, ¿vale? ¡Vamos, Morty, el universo no va a esperar eternamente! ⏳",
+      "mensaje": "👀 Mira, Morty, te voy a dar 5 personajes y eliges uno para que te cuente más sobre ellos, ¿de acuerdo? Si te sientes abrumado 😓, solo escribe {!strong!}menú{!/strong!} y volvemos atrás. ¡Vamos, Morty, el tiempo es relativo y el universo no se va a esperar por nostros! 🚀",
+      "mensajeAlterno": "👂 Escucha, Morty, te voy a dar otros 5 personajes y eliges uno para que te hable más sobre ellos, ¿vale? ¡Vamos, Morty, el universo no va a esperar eternamente! ⏳",
       "opcionInvalida": "¡Oye, oye, Morty! 🤨 Solo escoge una de las opciones que te di antes, no intentemos complicarnos más de lo necesario."
     }
   }

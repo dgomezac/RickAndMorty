@@ -11,6 +11,7 @@ const t = Utils.getText;
 
 const start = () => {
   Env.init(env);
+  Memory.setUserVar('intentos', 0);
   Yggdrasil.sendMessageText(t('Inicio.saludo'), 0);
   Yggdrasil.sendMessageText(t('Inicio.aviso'), 1);
   MenuPrincipal.menu();

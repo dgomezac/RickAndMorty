@@ -1,6 +1,7 @@
 import { Navigation, Utils, Yggdrasil, Logger, Memory } from '@aurotek/flows-js';
 import InfoPersonaje from '../InfoPersonaje/InfoPersonaje';
 import Api from '../../Api/Api';
+import FuncionesGenerales from '../../Modulos/FuncionesGenerales/funcionesGenerales';
 
 const t = Utils.getText;
 
@@ -41,11 +42,12 @@ const validaMenu = () => {
   const opcion = Yggdrasil.evaluateMenuOption('menuVerPersonajesRandom', Yggdrasil.getMessageText(), false);
   //Logger.logBot(opcion);
   if (opcion >= 1 && opcion <= 5) {
+    Memory.setUserVar('intentos', 0);
     InfoPersonaje.mostrarInfo(infoPersonajes[opcion - 1]);
     menu(5, false);
   }
   else {
-    Yggdrasil.sendMessageText(t('VerPersonajesRandom.opcionInvalida'), 0);
+    FuncionesGenerales.opcionInvalida(t('VerPersonajesRandom.opcionInvalida'));
   }
 };
 

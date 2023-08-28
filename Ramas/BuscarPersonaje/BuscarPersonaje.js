@@ -1,5 +1,6 @@
-import { Navigation, Utils, Yggdrasil, Logger } from '@aurotek/flows-js';
+import { Navigation, Utils, Yggdrasil, Memory } from '@aurotek/flows-js';
 import InfoPersonaje from '../InfoPersonaje/InfoPersonaje';
+import FuncionesGenerales from '../../Modulos/FuncionesGenerales/funcionesGenerales';
 import Api from '../../Api/Api';
 
 const t = Utils.getText;
@@ -10,12 +11,17 @@ const menu = (delay = 0, primeraVez = true) => {
 };
 
 const obtenerRespuesta = () => {
-  const id = Yggdrasil.getMessageText();
-  //Logger.logBot(id);
-  const info = Api.obtenerDatos(id);
-  if (info) {
-    InfoPersonaje.mostrarInfo(info);
-    menu(5, false);
+  const id = parseInt(Yggdrasil.getMessageText(), 10);
+  if (Number.isInteger(id) && id >= 1 && id <= 826) {
+    Memory.setUserVar('intentos', 0);
+    const info = Api.obtenerDatos(id);
+    if (info) {
+      InfoPersonaje.mostrarInfo(info);
+      menu(5, false);
+    }
+  }
+  else {
+    FuncionesGenerales.opcionInvalida(t('BuscarPersonaje.opcionInvalida'));
   }
 };
 
